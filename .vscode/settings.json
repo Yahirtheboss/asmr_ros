@@ -1,0 +1,28 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/asmr/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages",
+        "/home/asmr/robot_ws/install/telemetry_mqtt/lib/python3.10/site-packages",
+        "/home/asmr/robot_ws/install/robot_localization/local/lib/python3.10/dist-packages",
+        "/home/asmr/robot_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages",
+        "/home/asmr/robot_ws/install/iot_shadow_service_msgs/local/lib/python3.10/dist-packages",
+        "/home/asmr/robot_ws/install/iot_shadow_service/lib/python3.10/site-packages",
+        "/home/asmr/robot_ws/install/iot_cloudwatch_logs/lib/python3.10/site-packages",
+        "/home/asmr/robot_ws/install/esp32_controller/lib/python3.10/site-packages",
+        "/home/asmr/robot_ws/install/cmd_vel_republisher/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/asmr/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages",
+        "/home/asmr/robot_ws/install/telemetry_mqtt/lib/python3.10/site-packages",
+        "/home/asmr/robot_ws/install/robot_localization/local/lib/python3.10/dist-packages",
+        "/home/asmr/robot_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages",
+        "/home/asmr/robot_ws/install/iot_shadow_service_msgs/local/lib/python3.10/dist-packages",
+        "/home/asmr/robot_ws/install/iot_shadow_service/lib/python3.10/site-packages",
+        "/home/asmr/robot_ws/install/iot_cloudwatch_logs/lib/python3.10/site-packages",
+        "/home/asmr/robot_ws/install/esp32_controller/lib/python3.10/site-packages",
+        "/home/asmr/robot_ws/install/cmd_vel_republisher/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

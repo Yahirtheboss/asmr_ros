@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/asmr/microros_ws/install/micro_ros_agent/include/**",
+        "/home/asmr/microros_ws/install/micro_ros_msgs/include/**",
+        "/home/asmr/robot_ws/install/robot_localization/include/**",
+        "/home/asmr/robot_ws/install/micro_ros_agent/include/**",
+        "/home/asmr/robot_ws/install/micro_ros_msgs/include/**",
+        "/home/asmr/robot_ws/install/iot_shadow_service_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/asmr/robot_ws/src/robot_localization/include/**",
+        "/home/asmr/robot_ws/src/uros/micro-ROS-Agent/micro_ros_agent/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
