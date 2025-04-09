@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="robot">
 
   <xacro:include filename="inertial_macros.xacro"/>
 
@@ -23,7 +23,7 @@
   <!-- Base Link -->
   <link name="base_link"/>
 
-  <!-- Chassis Link -->
+  <!-- Chassis -->
   <joint name="chassis_joint" type="fixed">
     <parent link="base_link"/>
     <child link="chassis"/>
@@ -44,12 +44,12 @@
         <cylinder radius="0.381" length="0.115"/>
       </geometry>
     </collision>
-    <xacro:inertial_cylinder mass="0.5" radius="0.381" length="0.115"/>
-        <origin xyz="0.381 0 0.09" rpy="0 0 0"/>
+    <xacro:inertial_cylinder mass="0.5" radius="0.381" length="0.115">
+      <origin xyz="0.381 0 0.09" rpy="0 0 0"/>
     </xacro:inertial_cylinder>
   </link>
 
-  <!-- Left Wheel Link -->
+  <!-- Left Wheel -->
   <joint name="left_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="left_wheel"/>
@@ -69,12 +69,12 @@
         <cylinder radius="0.08" length="0.0508"/>
       </geometry>
     </collision>
-    <xacro:inertial_cylinder mass="0.1" length="0.0508" radius="0.08"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+    <xacro:inertial_cylinder mass="0.1" length="0.0508" radius="0.08">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
     </xacro:inertial_cylinder>
   </link>
 
-  <!-- Right Wheel Link -->
+  <!-- Right Wheel -->
   <joint name="right_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="right_wheel"/>
@@ -94,12 +94,12 @@
         <cylinder radius="0.08" length="0.0508"/>
       </geometry>
     </collision>
-    <xacro:inertial_cylinder mass="0.1" length="0.0508" radius="0.08"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+    <xacro:inertial_cylinder mass="0.1" length="0.0508" radius="0.08">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
     </xacro:inertial_cylinder>
   </link>
 
-  <!-- Caster Wheel Link -->
+  <!-- Caster Wheel -->
   <joint name="caster_wheel_joint" type="fixed">
     <parent link="chassis"/>
     <child link="caster_wheel"/>
@@ -118,9 +118,9 @@
         <sphere radius="0.075"/>
       </geometry>
     </collision>
-    <inertial_sphere mass="0.1" radius="0.075"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-    </inertial_sphere>
+    <xacro:inertial_sphere mass="0.1" radius="0.075">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_sphere>
   </link>
 
 </robot>
