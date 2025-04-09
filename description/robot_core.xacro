@@ -36,6 +36,12 @@
       </geometry>
       <material name="orange"/>
     </visual>
+    <collision>
+      <origin xyz="0.381 0 0.09"/>
+      <geometry>
+        <cylinder radius="0.381" length="0.115"/>
+      </geometry>
+    </collision>
   </link>
 
   <!-- Left Wheel Link -->
@@ -53,6 +59,11 @@
       </geometry>
       <material name="blue"/>
     </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.08" length="0.0508"/>
+      </geometry>
+    </collision>
   </link>
 
   <!-- Right Wheel Link -->
@@ -70,6 +81,11 @@
       </geometry>
       <material name="blue"/>
     </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.08" length="0.0508"/>
+      </geometry>
+    </collision>
   </link>
 
   <!-- Caster Wheel Link -->
@@ -86,6 +102,11 @@
       </geometry>
       <material name="black"/>
     </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.075"/>
+      </geometry>
+    </collision>
   </link>
 
 </robot>
